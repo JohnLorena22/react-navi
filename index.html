@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boilerplate — Navbar</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="src/css/variables.css" />
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/layout.css" />
+  <link rel="stylesheet" href="src/css/components/navbar.css" />
+  <link rel="stylesheet" href="src/css/components/footer.css" />
+</head>
+<body>
+  <div class="page">
+    <div id="navbarRoot"></div>
+
+    <main class="page-main" id="home">
+      <section class="section">
+        <span class="eyebrow">Welcome</span>
+        <h1>Build on a clean, sensible starting point.</h1>
+        <p>
+          This boilerplate ships with a responsive navbar (dropdown + mobile
+          menu included), a linked footer, and shared design tokens — ready
+          for you to drop your content in.
+        </p>
+        <div style="display:flex; gap:12px; margin-top:24px;">
+          <a class="btn btn--primary" href="#features">Get started</a>
+          <a class="btn btn--ghost" href="#docs">Read the docs</a>
+        </div>
+      </section>
+
+      <section class="section" id="features" style="padding-top:0;">
+        <span class="eyebrow">Features</span>
+        <h1 style="font-size: var(--fs-lg);">What's included</h1>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Responsive Navbar</h3>
+            <p>Collapses into a mobile menu below 860px, with a working dropdown for grouped links.</p>
+          </div>
+          <div class="card">
+            <h3>Design Tokens</h3>
+            <p>Colors, type, and spacing centralized in one variables file.</p>
+          </div>
+          <div class="card">
+            <h3>No Build Step</h3>
+            <p>Plain HTML/CSS/JS — open it directly or serve it statically.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footerRoot"></div>
+  </div>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
